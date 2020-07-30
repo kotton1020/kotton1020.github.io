@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charaset="utf-8" />
+    <title>ベジタリアンについて</title>
+    <link rel="stylesheet" href="./css/stylesheet.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>ベジタリアンについて</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li>ベジタリアンの基本知識</li>
+            <li>おすすめコンテンツ</li>
+            <li>べジタリアンクイズに挑戦！</li>
+        </ul>
+        <hr>
+    </nav>
+
+    <div>
+        <h2 id="jquery-h1">🥕Veganの基本知識🥕</h2>
+
+        <p>近年日本でも広がり始めているベジタリアンについてたっぷりご紹介します！こちらは世界のベジタリアン人口です。ちなみに私もベジタリアンになったので日本の9%に入っています。</p>
+        <canvas id="chacha" width="400" height="400"></canvas>
+
+
+    </div>
+
+    <div>
+        <h3>豆知識①</h3>
+
+        <p>ベジタリアンには色んな種類があるんだよ</p>
+
+        <h4>ベジタリアンの種類</h4>
+
+        <table border="2" style="border-collapse: collapse; border-color: #b0c4de;" width="70%" height="30%">
+            <tr>
+                <th></th>
+                <th>肉</th>
+                <th>魚</th>
+                <th>卵</th>
+                <th>乳</th>
+            </tr>
+            <tr>
+                <th>オヴォ・ラクト・ベジタリアン</th>
+                <td>×</td>
+                <td>×</td>
+                <td>◯</td>
+                <td>◯</td>
+            </tr>
+            <tr>
+                <th>オヴォ・ベジタリアン</th>
+                <td>×</td>
+                <td>×</td>
+                <td>◯</td>
+                <td>×</td>
+            </tr>
+            <tr>
+                <th>ラクト・ベジタリアン</th>
+                <td>×</td>
+                <td>×</td>
+                <td>×</td>
+                <td>◯</td>
+        </table>
+    </div>
+
+    <hr>
+
+    <div>
+        <h2>🥦おすすめコンテンツ🥦</h2>
+
+        <p>ベジタリアンについてまだまだ理解が進んでいないと感じています。そのため、わかりやすく、ベジタリアンの魅力を知れるコンテンツの紹介をします！</p>
+
+        <img src="img/dante.jpg" width="400">
+        <p>海月ダンテさん</p>
+        <p>アメリカ出身でYoutubeをとしてヴィーガンについて広めている。沖縄で料理人としても活動し、ヴィーガン男子という愛称で親しまれている。</p>
+        <input type=”submit” value="詳しく見る" onclick="alert('ようこそ海月ダンテさんへ！https://www.youtube.com/channel/UCU_yAJ41h9LWLr1BRyTUEpQ');" id="hokuhoku">
+
+        <br>
+
+        <br>
+
+        <img src="img/cowspiracy.webp" width="400">
+        <p>映画　「Cowspiracy: サステイナビリティ（持続可能性）の秘密」</p>
+        <p>環境保護活動を始めた一人の男性が、色々と調べていくうちに、実は環境汚染問題も、食物問題も、全ての原因に最も強く関わってるのが「畜産業」である事を突き止めてしまう所から、映画は始まる。2015年に「Netflix」での公開が始まってから、世界各国で異常な反響を呼んでる作品だ。</p>
+        <input type="submit" value="観てみる" onclick="alert('ご視聴はこちらから！https://www.netflix.com/jp/title/80033772');" id="hogehoge" /><br />
+
+    </div>
+
+    <hr>
+
+    <h3>べジタリアンクイズに挑戦！</h3>
+    <h2 id=”_question”>ベジタリアンは食べるけど、ヴィーガンの人は食べないものはなんだ？</h2>
+    <ul>
+        <li id="_ans1">蜂蜜</li>
+        <li id="_ans2">海藻</li>
+        <li id="_ans3">鶏肉</li>
+    </ul>
+    <button type="button" id="_answer_1" onclick="Answer_Check(1)">蜂蜜</button>
+    <button type="button" id="_answer_2" onclick="Answer_Check(2)">海藻</button>
+    <button type="button" id="_answer_3" onclick="Answer_Check(3)">鶏肉</button>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https: //cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+    <script src="js/chart2.js"></script>
+
+</body>
+
+</html>
